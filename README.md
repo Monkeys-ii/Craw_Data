@@ -5,4 +5,11 @@
  - My program has been automatic update data to push my website, code in folder templates // (13/03/2024)
 
  - USAGE :
- - 
+ - Step 1: Download file main.py and folder templates, remember that name folder "templates" is force.
+ - Step 2: Download Database MongoDb, link Download : https://www.mongodb.com/try/download/community
+   + In MongoDb create your name database and your name collection, same as name in line 35, 36 in file main.py.
+   + In my project name of database is "News" and name of collection is "NewsAndLink"
+ - Step 3: To run the program, in teminal of main.py you must install requests, BeautifulSoup, json, pymongo, time, schedule.
+ - Step 4: Run file Flask.py
+ - Step 5: Run file main.py
+     
