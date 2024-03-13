@@ -11,5 +11,5 @@
    + In my project name of database is "News" and name of collection is "NewsAndLink"
  - Step 3: To run the program, in teminal of main.py you must install requests, BeautifulSoup, json, pymongo, time, schedule.
  - Step 4: Run file Flask.py
- - Step 5: Run file main.py
+ - Step 5: Run file main.py and wait for one minutes
      
