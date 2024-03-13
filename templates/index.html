@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tỷ Giá </title>
+    <style>
+        table {
+            border-bottom: 1px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font_family: Arial;">Chuyển đổi ngoại tệ </p>
+    <td>Tỷ giá được cập nhật lúc {{data[0].Time}}</td>
+    <ul>
+
+
+
+        <table>
+            {% for x in money %}
+
+            <th style="background-color: rgb(191, 152, 227);">
+
+                <h3>{{x}}</h3>
+            </th>
+
+            {%endfor%}
+
+            {% for item in data %}
+            <tr>
+                <td><img src="{{item.Flag}}"></td>
+                <td>{{item.Country}}</td>
+                <td>{{item.Cashmoney}}</td>
+                <td>{{item.Sellmoney}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </ul>
+</body>
+
+</html>

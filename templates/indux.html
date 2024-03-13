@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1 style='color :black ;'> Trang Chủ : {{content}}</h1>
+    <h1 style="color :brown ;"> Chào mừng thành viên mới đến với trang web! </h1>
+    {% for x in cars :%}
+        <h1 style = 'color :rgb(195, 110, 110)'> {{x }}</h1>
+    {%endfor%}
+</body>
+
+</html>

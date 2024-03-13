@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h1> MY WEBSITE</h1>
+  <div class="table-wrapper">
+    <table class="table-responsive">
+      <thead class="table-header">
+        <tr>
+          <th class="col-1-3">
+            <span class="d-mobile-none">Mã ngoại tệ</span>
+            <span class="d-desktop-none">Mã NT</span>
+          </th>
+          <th class="col-2-3 d-mobile-none">Tên ngoại tệ</th>
+          <th class="col-1-5">
+            <span class="d-mobile-none">Mua tiền mặt</span>
+            <span class="d-desktop-none">Mua tiền mặt</span>
+          </th>
+          <th class="col-1-5">
+            <span class="d-mobile-none">Mua chuyển khoản</span>
+            <span class="d-desktop-none">Mua chuyển khoản</span>
+          </th>
+          <th class="col-1-5">
+            <span class="d-mobile-none">Bán</span>
+            <span class="d-desktop-none">Bán</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody style="max-height: 310px;">
+        <tr>
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_usa.svg?h=32&amp;w=32&amp;ts=20230610195953&amp;hash=4576D9B7C910424CC72B7A592BA369AE"
+                  alt=""></picture>
+            </span>USD</td>
+          <td class="col-2-3 d-mobile-none">US DOLLAR</td>
+          <td class="col-1-5 text-end">24,470.00</td>
+          <td class="col-1-5 text-end">24,500.00</td>
+          <td class="col-1-5 text-end">24,840.00</td>
+        </tr>
+        <tr>
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_eur.svg?h=32&amp;w=32&amp;ts=20230610195955&amp;hash=10502813C2316A5601FD57F7A0C89A3A"
+                  alt=""></picture>
+            </span>EUR</td>
+          <td class="col-2-3 d-mobile-none">EURO</td>
+          <td class="col-1-5 text-end">26,073.42</td>
+          <td class="col-1-5 text-end">26,336.79</td>
+          <td class="col-1-5 text-end">27,504.34</td>
+        </tr>
+        <tr>
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_gbp.svg?h=32&amp;w=32&amp;ts=20230610195950&amp;hash=72ED63A02E20F8B413E65DE9B7F062AE"
+                  alt=""></picture>
+            </span>GBP</td>
+          <td class="col-2-3 d-mobile-none">POUND STERLING</td>
+          <td class="col-1-5 text-end">30,457.85</td>
+          <td class="col-1-5 text-end">30,765.50</td>
+          <td class="col-1-5 text-end">31,753.97</td>
+        </tr>
+        <tr>
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_jpy.svg?h=32&amp;w=32&amp;ts=20230610195953&amp;hash=C5D3E7B6B5EEE49C3D5C3C3A8B6798B8"
+                  alt=""></picture>
+            </span>JPY</td>
+          <td class="col-2-3 d-mobile-none">YEN</td>
+          <td class="col-1-5 text-end">159.18</td>
+          <td class="col-1-5 text-end">160.79</td>
+          <td class="col-1-5 text-end">168.48</td>
+        </tr>
+        <tr>
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_aud.svg?h=32&amp;w=32&amp;ts=20230610195950&amp;hash=F70700292015EB326CA79643D4F05C03"
+                  alt=""></picture>
+            </span>AUD</td>
+          <td class="col-2-3 d-mobile-none">AUSTRALIAN DOLLAR</td>
+          <td class="col-1-5 text-end">15,672.42</td>
+          <td class="col-1-5 text-end">15,830.72</td>
+          <td class="col-1-5 text-end">16,339.35</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_sgd.svg?h=32&amp;w=32&amp;ts=20230709003433&amp;hash=C95A1CFD98A6896023B5EFE9D23459AA"
+                  alt=""></picture>
+            </span>SGD</td>
+          <td class="col-2-3 d-mobile-none">SINGAPORE DOLLAR</td>
+          <td class="col-1-5 text-end">17,898.35</td>
+          <td class="col-1-5 text-end">18,079.14</td>
+          <td class="col-1-5 text-end">18,660.01</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_thb.svg?h=32&amp;w=32&amp;ts=20230610195952&amp;hash=AB6CDBA1C854ADE46132EBF0A6DCFEF4"
+                  alt=""></picture>
+            </span>THB</td>
+          <td class="col-2-3 d-mobile-none">THAILAND BAHT</td>
+          <td class="col-1-5 text-end">608.57</td>
+          <td class="col-1-5 text-end">676.18</td>
+          <td class="col-1-5 text-end">702.11</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_cad.svg?h=32&amp;w=32&amp;ts=20230610195951&amp;hash=55B303641110059C97F6ABDE45B2FE20"
+                  alt=""></picture>
+            </span>CAD</td>
+          <td class="col-2-3 d-mobile-none">CANADIAN DOLLAR</td>
+          <td class="col-1-5 text-end">17,726.80</td>
+          <td class="col-1-5 text-end">17,905.86</td>
+          <td class="col-1-5 text-end">18,481.15</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_chf.svg?h=32&amp;w=32&amp;ts=20230610195952&amp;hash=CBA2E48794BD6E04AAF8761C55AB07DF"
+                  alt=""></picture>
+            </span>CHF</td>
+          <td class="col-2-3 d-mobile-none">SWISS FRANC</td>
+          <td class="col-1-5 text-end">27,250.21</td>
+          <td class="col-1-5 text-end">27,525.46</td>
+          <td class="col-1-5 text-end">28,409.83</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_hkd.svg?h=32&amp;w=32&amp;ts=20230610195951&amp;hash=E50E43ECCD43C736E273734DEEB000D8"
+                  alt=""></picture>
+            </span>HKD</td>
+          <td class="col-2-3 d-mobile-none">HONGKONG DOLLAR</td>
+          <td class="col-1-5 text-end">3,072.69</td>
+          <td class="col-1-5 text-end">3,103.72</td>
+          <td class="col-1-5 text-end">3,203.44</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_cny.svg?h=32&amp;w=32&amp;ts=20230610195953&amp;hash=1E37E5E1D30CA9F186D9B8A0A188AE7C"
+                  alt=""></picture>
+            </span>CNY</td>
+          <td class="col-2-3 d-mobile-none">YUAN RENMINBI</td>
+          <td class="col-1-5 text-end">3,356.14</td>
+          <td class="col-1-5 text-end">3,390.04</td>
+          <td class="col-1-5 text-end">3,499.49</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_dkk.svg?h=32&amp;w=32&amp;ts=20230610195954&amp;hash=7A1074CAFFF3E4469DD8DBFA9F95D1C0"
+                  alt=""></picture>
+            </span>DKK</td>
+          <td class="col-2-3 d-mobile-none">DANISH KRONE</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">3,523.95</td>
+          <td class="col-1-5 text-end">3,659.07</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_inr.svg?h=32&amp;w=32&amp;ts=20230610195952&amp;hash=6E19DDEEC1053D83CE9C98283BE347AC"
+                  alt=""></picture>
+            </span>INR</td>
+          <td class="col-2-3 d-mobile-none">INDIAN RUPEE</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">296.77</td>
+          <td class="col-1-5 text-end">308.65</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_krw.svg?h=32&amp;w=32&amp;ts=20230709003433&amp;hash=43B80AF8FF6632988EB89EF0C30BDDE6"
+                  alt=""></picture>
+            </span>KRW</td>
+          <td class="col-2-3 d-mobile-none">KOREAN WON</td>
+          <td class="col-1-5 text-end">16.01</td>
+          <td class="col-1-5 text-end">17.79</td>
+          <td class="col-1-5 text-end">19.41</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_kwd.svg?h=32&amp;w=32&amp;ts=20230610195949&amp;hash=76B738C67E5151DBB4F9D27A0DEA2FC3"
+                  alt=""></picture>
+            </span>KWD</td>
+          <td class="col-2-3 d-mobile-none">KUWAITI DINAR</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">79,976.59</td>
+          <td class="col-1-5 text-end">83,177.80</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_myr.svg?h=32&amp;w=32&amp;ts=20230610195950&amp;hash=4736802FBB11427761408F193E6452EC"
+                  alt=""></picture>
+            </span>MYR</td>
+          <td class="col-2-3 d-mobile-none">MALAYSIAN RINGGIT</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">5,163.09</td>
+          <td class="col-1-5 text-end">5,275.95</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_nok.svg?h=32&amp;w=32&amp;ts=20230610195951&amp;hash=48B571580E4926C86F257FE4D167F750"
+                  alt=""></picture>
+            </span>NOK</td>
+          <td class="col-2-3 d-mobile-none">NORWEGIAN KRONER</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">2,297.34</td>
+          <td class="col-1-5 text-end">2,394.99</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_rub.svg?h=32&amp;w=32&amp;ts=20230709003433&amp;hash=B5A31D5C371B6C922EBB4808605705EB"
+                  alt=""></picture>
+            </span>RUB</td>
+          <td class="col-2-3 d-mobile-none">RUSSIAN RUBLE</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">257.03</td>
+          <td class="col-1-5 text-end">284.54</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_sar.svg?h=32&amp;w=32&amp;ts=20230610195954&amp;hash=732C766503BA27FF3A8764FAF20A2C0F"
+                  alt=""></picture>
+            </span>SAR</td>
+          <td class="col-2-3 d-mobile-none">SAUDI RIAL</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">6,559.69</td>
+          <td class="col-1-5 text-end">6,822.25</td>
+        </tr>
+        <tr class="can-collapse collapsed">
+          <td class="col-1-3"><span class="ensign">
+              <picture><img
+                  src="/-/media/Default-Website/Default-Images/Icons/Flags/im_flag_sek.svg?h=32&amp;w=32&amp;ts=20230610195949&amp;hash=88CF4CDE8DB12CA0D56485A05EC27A22"
+                  alt=""></picture>
+            </span>SEK</td>
+          <td class="col-2-3 d-mobile-none">SWEDISH KRONA</td>
+          <td class="col-1-5 text-end">-</td>
+          <td class="col-1-5 text-end">2,339.35</td>
+          <td class="col-1-5 text-end">2,438.79</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  {% block content %} {% endblock %}
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
