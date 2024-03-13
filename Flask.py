@@ -3,14 +3,14 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-# Kết nối tới cơ sở dữ liệu MongoDB
+# Link to database MongoDB
 client = MongoClient('mongodb://localhost:27017/')
 db = client['News']
 collection = db['NewsAndLink']
 
-@app.route('/tiente')
+@app.route('/')
 def index():
-    data = collection.find()  # Truy vấn tất cả dữ liệu từ collection
+    data = collection.find()  # Find all data from Database into variable data
     return render_template('index.html', data=data)
 
 if __name__ == '__main__':
